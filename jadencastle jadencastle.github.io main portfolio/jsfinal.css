@@ -1,0 +1,186 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 10vh 20vw;
+    font-family: 'Manrope', sans-serif;
+    margin-top: 20px; /* Reduce gap between about section and projects */
+}
+
+#projects a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+}
+
+.project:hover {
+    background-color: #b9c8bc;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 15px 20px;
+    align-items: center; /* center the items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow effect */
+    border-radius: 8px; /* Rounded corners for the project box */
+    font-family: 'Manrope', sans-serif;
+}
+
+.project img {
+    width: 10vw;
+    height: auto;
+    margin-right: 20px; /* Add space between the image and the text */
+    padding: 10px;
+    border: 1px hidden #ddd; 
+    border-radius: 8px; 
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    justify-content: center;
+}
+
+
+#heading-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 10vh 20vw;
+    font-family: 'Manrope', sans-serif;
+}
+
+#buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+#buttons button {
+    padding: 10px 20px;
+    background-color: #3A6A59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    background-color: #2A4B40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect transitions */
+}
+
+#heading-container h3 {
+    font-size: 32px;
+    font-weight: bold; 
+    margin: 0; 
+}
+/* Center the entire about section */
+#about {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: auto;         
+    text-align: center;      
+    margin-top: 20px;        
+}
+
+/* Container to hold both the image and the text side by side */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+}
+
+/* Styling for the image */
+.image img {
+    width: 300px;
+    height: auto; 
+    border-radius: 8px; 
+}
+
+/* Styling for the name and description */
+#name {
+    max-width: 500px; 
+    text-align: left    ; 
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Manrope', sans-serif;
+    font-size: .9rem; 
+    line-height: 2.0; 
+}
+
+#socials {
+    display: flex;
+    gap: 10px; 
+}
+
+#socials button {
+    padding: 10px 20px;
+    background-color: #A7A88A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#socials button:hover {
+    background-color: #8B8C7A;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2A4B40; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: opacity 0.5s;
+    opacity: 0; /* Start invisible */
+}
+
+.navbar {
+    /* background-color: #3A6A59; */
+    color: white;
+    padding: 15px 20px;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.navbar-brand:hover {
+    color: #3A6A59; /* Change this to the color you want on hover */
+    text-decoration: underline; /* Optional: adds an underline effect */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
